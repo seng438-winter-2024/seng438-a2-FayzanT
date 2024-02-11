@@ -4,10 +4,10 @@
 
 | Group \#:      |     |
 | -------------- | --- |
-| Rohan Kapila |     |
-| Fayzan Toor               |     |
-| Shayyan Asim               |     |
-| Qazi Saboor               |     |
+| Rohan Kapila | 30145862 |
+| Fayzan Toor               | 30141139    |
+| Shayyan Asim               |  30149567   |
+| Qazi Saboor               | 30142452    |
 
 # 1 Introduction
 
