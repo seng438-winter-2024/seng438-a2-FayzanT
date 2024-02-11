@@ -5,9 +5,9 @@
 | Group \#:      |     |
 | -------------- | --- |
 | Student Names: |     |
-|                |     |
-|                |     |
-|                |     |
+| Fayzan Toor               |     |
+| Rohan Kapila               |     |
+| Qazi Saboor               |     |
 
 # 1 Introduction
 
