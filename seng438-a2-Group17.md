@@ -29,6 +29,18 @@ Detailed Description of Unit Test Strategy for Range.java:
 
 By considering these input partitions, the unit test strategy ensures comprehensive coverage of the Range class functionality, guaranteeing its correctness and reliability under various scenarios. Each test case is designed to target specific aspects of the class's behavior, facilitating effective validation and debugging.
 
+Detailed Description of Unit Test Strategy for DataUtilites.java:
+
+1. Direct Row Access: This partition verifies the method's ability to accurately calculate the total of all values in a specified row of a `Values2D` dataset. It ensures that the method correctly sums the elements of the row, taking into account the correctness of indexing and summing functionalities.
+  
+2. Primitive to Object Conversion: This partition focuses on the method's capability to convert an array of double primitives to an array of `Number` objects. By testing this functionality, it verifies the method handles the conversion correctly, ensuring each primitive value is encapsulated into a corresponding `Number` object, preserving the value accurately.
+
+3. Cumulative Calculation Accuracy**: This partition aims to validate the correctness of cumulative percentage calculations within a `KeyedValues` dataset. It examines whether the method computes cumulative percentages correctly, ensuring the calculations are accurate and the results maintain the integrity of the original data, reflecting proper cumulative logic.
+
+4. 2D Array Conversion Integrity: This section tests the method's ability to convert a 2D array of double primitives to a 2D array of `Number` objects without losing data integrity. It ensures the method accurately handles the conversion of each element, maintaining the original values and structure of the 2D array.
+
+By adopting this structured approach to testing, similar to the one used for `Range.java`, we ensure comprehensive coverage and reliability of the methods within the DataUtilities class or similar utility classes. Each test case is meticulously designed to target specific functionalities, enabling effective validation and ensuring the methods perform as expected under various scenarios.
+
 
 
 
