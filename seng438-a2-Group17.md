@@ -80,7 +80,7 @@ Team Work was divided into 2 Groups. And we adopted the pair programming approac
 
 # 5 Difficulties encountered, challenges overcome, and lessons learned
 
-Text…
+During our test making process for the DataUtilities class, we encountered some difficulty when implementing methods that needed Mocking to replicate their dependent classes. This was encountered when we specifically went to test the CumulativePercentages method that required KeyedValues as input to function. We tried to use the example Mock given in the github repo, but our test would not even run. By using the JUnit logs, we discovered the issue was based on the methods we were mocking being called once, when they were expected to be used multiple times. We had to use online resources and ChatGPT to figure out the implementation of calling methods multiple times. From this experience, we learned how to call on methods repeatedly while mocking.
 
 # 6 Comments/feedback on the lab itself
 
