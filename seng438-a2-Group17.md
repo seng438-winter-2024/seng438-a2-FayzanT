@@ -49,28 +49,28 @@ By adopting this structured approach to testing, similar to the one used for `Ra
 
 Out of the 15 methods we tested the following 5 methods.
 
-# Test Cases Developed for Range.java:
-# Test Boundaries Directly                                                                                          
+## Test Cases Developed for Range.java:
+### Test Boundaries Directly                                                                                          
  Methods: getUpperBound() and getLowerBound()                                                                                    
  Description: Verifies if the lower and upper boundaries are set correctly when directly provided during initialization.
 
-# Test Zero Length Range:                                                                                                                       
+### Test Zero Length Range:                                                                                                                       
  Method: getLength()                                                                                                   Description: Ensures that the length of the range is correctly computed when the range has zero length.
 
-# Test Contains at Boundaries:                                                                                                                     
+### Test Contains at Boundaries:                                                                                                                     
  Method: Contains()                                                                                                                                      
  Description: Tests the contains method to verify if it correctly identifies whether the range contains boundary values.
 
 
-# Test Shift With Zero Crossing:                                                                                                              
+### Test Shift With Zero Crossing:                                                                                                              
  Method: Shift()                                                                                                                                              
-   Description: Validates the shift method's behavior when the range crosses zero.
+ Description: Validates the shift method's behavior when the range crosses zero.
 
-# Test Shift Without Zero Crossing:   
+### Test Shift Without Zero Crossing:   
  Method:Shift()                                                                                                                                                             
  Description: Checks if the shift method maintains the range boundaries without crossing zero.
 
-# Test Get Length for Different Ranges:                                                                                                     
+### Test Get Length for Different Ranges:                                                                                                     
  Method: getLength()                                                                                                                                                  
  Description: Ensures that the getLength method calculates the correct length for negative, zero, and positive ranges.
 
@@ -79,22 +79,22 @@ Out of the 15 methods we tested the following 5 methods.
 
 
 
-# Test Cases Developed for DataUtilities.java:
+## Test Cases Developed for DataUtilities.java:
 
-# Test Calculate Row Total:
- Method:calculateRowTotal()
+### Test Calculate Row Total:
+ Methods: calculateRowTotal()
  Description: Verifies that the calculateRowTotal method accurately computes the sum of values within a specified row using a mocked Values2D object.
 
-# Test Create Number Array:
- Methods:createNumberArray()
+### Test Create Number Array:
+ Methods: createNumberArray()
  Description: Ensures that the createNumberArray method correctly transforms an array of double primitives into an array of Number objects.
 
-# Test Get Cumulative Percentages:
- Methods:getCumulativePercentages()
+### Test Get Cumulative Percentages:
+ Methods: getCumulativePercentages()
  Description: Tests the getCumulativePercentages method to confirm it accurately calculates the cumulative percentages of values in a KeyedValues dataset.
 
-# Test Create Number Array2D with Valid Input:
- Methods:createNumberArray2D()
+### Test Create Number Array2D with Valid Input:
+ Methods: createNumberArray2D()
  Description: Assesses if the createNumberArray2D method can accurately convert a 2D array of double primitives into a 2D array of Number objects.
 
 
