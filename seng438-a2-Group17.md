@@ -9,11 +9,10 @@
 | Shayyan Asim               |  30149567   |
 | Qazi Ali              | 30142452    |
 
-# 1 Introduction
+# 1 Introduction:
+In the context of modern software development, unit testing stands as a critical component of ensuring code quality and functionality. This assignment embarks on the journey of exploring automated unit testing by focusing on two specific Java classes: DataUtilities.java and Range.java. Utilizing JUnit, a cornerstone of the XUnit framework family renowned for its efficacy in the Java ecosystem, our task is to delve into the intricacies of testing these classes. The objective here is twofold: firstly, to provide a comprehensive understanding of the fundamentals of automated unit testing, and secondly, to highlight the importance of tailoring testing procedures to meet the unique requirements of each unit under scrutiny. Through this assignment, we aim to not only grasp the technical aspects of JUnit testing but also appreciate its pivotal role in the broader context of software engineering. This educational endeavor seeks to equip us with the skills and knowledge necessary to apply unit testing practices effectively, ensuring that our code not only meets functional specifications but also adheres to the highest standards of quality and reliability
 
-In this assignment we are tasked to test two different classes. DataUtilities.java and Range.java using Junit. The objective of this assignment is to educate us on the fundamentals of automated unit testing, emphasizing testing procedures aligned with the specific requirements of each unit. JUnit, a prominent member of the XUnit framework family, serves as the primary unit testing framework for Java.
-
-# 2 Detailed description of unit test strategy
+# 2 Detailed description of unit test strategy:
 
 ## Detailed Description of Unit Test Strategy for Range.java:
 
@@ -54,7 +53,7 @@ By adopting this structured approach to testing, similar to the one used for `Ra
 
 
 
-# 3 Test cases developed
+# 3 Test cases developed:
 
 
 ## Test Cases Developed for Range.java:
@@ -111,16 +110,16 @@ These test cases are designed to cover key functionalities within the DataUtilit
 
 
 
-# 4 How the team work/effort was divided and managed
+# 4 How the team work/effort was divided and managed:
 
 Team Work was divided into two Groups. And we adopted the pair programming approach where within each group one was writing code and the other was the observer but we switched roles and cross checked each other's work. Rohan Kapila and Shayyan Asim tested the Range.java class whereas Qazi Ali and Fayzan Toor tested the DataUtilities.java class but both groups then tested each other’s assigned class and cross checked.
 
 
-# 5 Difficulties encountered, challenges overcome, and lessons learned
+# 5 Difficulties encountered, challenges overcome, and lessons learned:
 
 During our test making process for the DataUtilities class, we encountered some difficulty when implementing methods that needed Mocking to replicate their dependent classes. This was encountered when we specifically went to test the CumulativePercentages method that required KeyedValues as input to function. We tried to use the example Mock given in the github repo, but our test would not even run. By using the JUnit logs, we discovered the issue was based on the methods we were mocking being called once, when they were expected to be used multiple times. We had to use online resources and ChatGPT to figure out the implementation of calling methods multiple times. From this experience, we learned how to call on methods repeatedly while mocking.
 
-# 6 Comments/feedback on the lab itself
+# 6 Comments/feedback on the lab itself:
 
 This assignment was a fun way to get hands-on experience with Junit testing and understanding the importance of testing in software engineering. It taught us how we should design test cases by coding and then running them. The lab was designed nicely and it was easy to run through every step however for windows user in our group we were not able to render the index.html file, in future we hope that all files given to us by lab instructions are capable on running on any type of OS.
 
