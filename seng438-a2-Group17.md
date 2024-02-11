@@ -79,6 +79,23 @@ Out of the 15 methods we tested the following 5 methods.
 
 
 
+# Test Cases Developed for DataUtilities.java:
+
+# Test Calculate Row Total:
+Methods: calculateRowTotal()
+Description: Verifies that the calculateRowTotal method accurately computes the sum of values within a specified row using a mocked Values2D object.
+
+# Test Create Number Array:
+Methods: createNumberArray()
+Description: Ensures that the createNumberArray method correctly transforms an array of double primitives into an array of Number objects.
+
+# Test Get Cumulative Percentages:
+Methods: getCumulativePercentages()
+Description: Tests the getCumulativePercentages method to confirm it accurately calculates the cumulative percentages of values in a KeyedValues dataset.
+
+# Test Create Number Array2D with Valid Input:
+Methods: createNumberArray2D()
+Description: Assesses if the createNumberArray2D method can accurately convert a 2D array of double primitives into a 2D array of Number objects.
 
 
 
