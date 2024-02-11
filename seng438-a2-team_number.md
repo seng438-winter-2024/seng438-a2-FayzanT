@@ -2,7 +2,7 @@
 
 **Lab. Report \#2 – Requirements-Based Test Generation**
 
-| Group \#:      |     |
+| Group \#:      |   17  |
 | -------------- | --- |
 | Rohan Kapila | 30145862 |
 | Fayzan Toor               | 30141139    |
