@@ -11,7 +11,7 @@
 
 # 1 Introduction
 
-In this assignment we are tasked to test 2 different classes. DataUtilities.java and Range.java using Junit. The objective of this assignment is to educate students on the fundamentals of automated unit testing, emphasizing testing procedures aligned with the specific requirements of each unit. JUnit, a prominent member of the XUnit framework family, serves as the primary unit testing framework for Java.
+In this assignment we are tasked to test two different classes. DataUtilities.java and Range.java using Junit. The objective of this assignment is to educate us on the fundamentals of automated unit testing, emphasizing testing procedures aligned with the specific requirements of each unit. JUnit, a prominent member of the XUnit framework family, serves as the primary unit testing framework for Java.
 
 # 2 Detailed description of unit test strategy
 
