@@ -82,7 +82,7 @@ Out of the 15 methods we tested the following 5 methods.
 # Test Cases Developed for DataUtilities.java:
 
 # Test Calculate Row Total:
- Methods:calculateRowTotal()
+ Method:calculateRowTotal()
  Description: Verifies that the calculateRowTotal method accurately computes the sum of values within a specified row using a mocked Values2D object.
 
 # Test Create Number Array:
