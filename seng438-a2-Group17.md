@@ -15,30 +15,39 @@ In this assignment we are tasked to test 2 different classes. DataUtilities.java
 
 # 2 Detailed description of unit test strategy
 
-# Detailed Description of Unit Test Strategy for Range.java:
+## Detailed Description of Unit Test Strategy for Range.java:
 
-1. Boundaries Directly: This partition focuses on testing the correctness of the lower and upper boundaries directly when provided during initialization. It ensures that the range object sets its boundaries accurately based on the input values.
+### 1. Boundaries Directly:
+   This partition focuses on testing the correctness of the lower and upper boundaries directly when provided during initialization. It ensures that the range object sets its boundaries accurately based on the input values.
 
-2. Zero Length Range: This partition examines the scenario where the range has zero length. By testing this condition, it verifies whether the class handles cases where the lower and upper bounds are equal appropriately, ensuring that the length calculation is correct.
+### 2. Zero Length Range: 
+  This partition examines the scenario where the range has zero length. By testing this condition, it verifies whether the class handles cases where the lower and upper bounds are equal appropriately, ensuring that the length calculation is correct.
 
-3. Contains at Boundaries: This partition targets the contains method, specifically testing its behavior with boundary values. It validates whether the method correctly identifies whether the range contains its boundary values or not, covering both inclusive and exclusive boundary scenarios.
+### 3. Contains at Boundaries: 
+  This partition targets the contains method, specifically testing its behavior with boundary values. It validates whether the method correctly identifies whether the range contains its boundary values or not, covering both inclusive and exclusive boundary scenarios.
 
-4. Shift With Zero Crossing: This partition tests the shift method, focusing on scenarios where the range crosses zero as a result of the shift operation. By testing this condition, it ensures that the class handles range shifting accurately, adjusting boundaries accordingly without unexpected behavior when crossing zero.
+### 4. Shift With Zero Crossing:
+  This partition tests the shift method, focusing on scenarios where the range crosses zero as a result of the shift operation. By testing this condition, it ensures that the class handles range shifting accurately, adjusting boundaries accordingly without unexpected behavior when crossing zero.
 
-5. Get Length for Different Ranges: This partition aims to validate the correctness of the getLength method across different types of ranges: negative, zero, and positive. By testing these scenarios, it ensures that the method accurately calculates the length of the range regardless of its position relative to zero.
+### 5. Get Length for Different Ranges:
+  This partition aims to validate the correctness of the getLength method across different types of ranges: negative, zero, and positive. By testing these scenarios, it ensures that the method accurately calculates the length of the range regardless of its position relative to zero.
 
 By considering these input partitions, the unit test strategy ensures comprehensive coverage of the Range class functionality, guaranteeing its correctness and reliability under various scenarios. Each test case is designed to target specific aspects of the class's behavior, facilitating effective validation and debugging.
 
 
-# Detailed Description of Unit Test Strategy for DataUtilites.java:
+## Detailed Description of Unit Test Strategy for DataUtilites.java:
 
-1. Direct Row Access: This partition verifies the method's ability to accurately calculate the total of all values in a specified row of a `Values2D` dataset. It ensures that the method correctly sums the elements of the row, taking into account the correctness of indexing and summing functionalities.
+### 1. Direct Row Access: 
+  This partition verifies the method's ability to accurately calculate the total of all values in a specified row of a `Values2D` dataset. It ensures that the method correctly sums the elements of the row, taking into account the correctness of indexing and summing functionalities.
   
-2. Primitive to Object Conversion: This partition focuses on the method's capability to convert an array of double primitives to an array of `Number` objects. By testing this functionality, it verifies the method handles the conversion correctly, ensuring each primitive value is encapsulated into a corresponding `Number` object, preserving the value accurately.
+### 2. Primitive to Object Conversion:
+  This partition focuses on the method's capability to convert an array of double primitives to an array of `Number` objects. By testing this functionality, it verifies the method handles the conversion correctly, ensuring each primitive value is encapsulated into a corresponding `Number` object, preserving the value accurately.
 
-3. Cumulative Calculation Accuracy**: This partition aims to validate the correctness of cumulative percentage calculations within a `KeyedValues` dataset. It examines whether the method computes cumulative percentages correctly, ensuring the calculations are accurate and the results maintain the integrity of the original data, reflecting proper cumulative logic.
+### 3. Cumulative Calculation Accuracy**: 
+  This partition aims to validate the correctness of cumulative percentage calculations within a `KeyedValues` dataset. It examines whether the method computes cumulative percentages correctly, ensuring the calculations are accurate and the results maintain the integrity of the original data, reflecting proper cumulative logic.
 
-4. 2D Array Conversion Integrity: This section tests the method's ability to convert a 2D array of double primitives to a 2D array of `Number` objects without losing data integrity. It ensures the method accurately handles the conversion of each element, maintaining the original values and structure of the 2D array.
+### 4. 2D Array Conversion Integrity:
+  This section tests the method's ability to convert a 2D array of double primitives to a 2D array of `Number` objects without losing data integrity. It ensures the method accurately handles the conversion of each element, maintaining the original values and structure of the 2D array.
 
 By adopting this structured approach to testing, similar to the one used for `Range.java`, we ensure comprehensive coverage and reliability of the methods within the DataUtilities class or similar utility classes. Each test case is meticulously designed to target specific functionalities, enabling effective validation and ensuring the methods perform as expected under various scenarios.
 
