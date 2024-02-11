@@ -15,6 +15,21 @@ In this assignment we are tasked to test 2 different classes. DataUtilities.java
 
 # 2 Detailed description of unit test strategy
 
+Detailed Description of Unit Test Strategy for Range.java:
+
+## Boundaries Directly: 
+This partition focuses on testing the correctness of the lower and upper boundaries directly when provided during initialization. It ensures that the range object sets its boundaries accurately based on the input values.
+
+## Zero Length Range: 
+This partition examines the scenario where the range has zero length. By testing this condition, it verifies whether the class handles cases where the lower and upper bounds are equal appropriately, ensuring that the length calculation is correct.
+Contains at Boundaries: This partition targets the contains method, specifically testing its behavior with boundary values. It validates whether the method correctly identifies whether the range contains its boundary values or not, covering both inclusive and exclusive boundary scenarios.
+## Shift With Zero Crossing: 
+This partition tests the shift method, focusing on scenarios where the range crosses zero as a result of the shift operation. By testing this condition, it ensures that the class handles range shifting accurately, adjusting boundaries accordingly without unexpected behavior when crossing zero.
+## Shift Without Zero Crossing: 
+Unlike the previous partition, this section examines the shift method's behavior when the range is shifted without crossing zero. It verifies that the range boundaries are appropriately adjusted without crossing the zero boundary, maintaining the integrity of the range.
+Get Length for Different Ranges: This partition aims to validate the correctness of the getLength method across different types of ranges: negative, zero, and positive. By testing these scenarios, it ensures that the method accurately calculates the length of the range regardless of its position relative to zero.
+
+By considering these input partitions, the unit test strategy ensures comprehensive coverage of the Range class functionality, guaranteeing its correctness and reliability under various scenarios. Each test case is designed to target specific aspects of the class's behavior, facilitating effective validation and debugging.
 
 
 # 3 Test cases developed
