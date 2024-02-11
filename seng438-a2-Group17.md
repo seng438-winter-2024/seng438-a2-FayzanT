@@ -15,7 +15,7 @@ In this assignment we are tasked to test 2 different classes. DataUtilities.java
 
 # 2 Detailed description of unit test strategy
 
-Detailed Description of Unit Test Strategy for Range.java:
+# Detailed Description of Unit Test Strategy for Range.java:
 
 1. Boundaries Directly: This partition focuses on testing the correctness of the lower and upper boundaries directly when provided during initialization. It ensures that the range object sets its boundaries accurately based on the input values.
 
@@ -30,7 +30,7 @@ Detailed Description of Unit Test Strategy for Range.java:
 By considering these input partitions, the unit test strategy ensures comprehensive coverage of the Range class functionality, guaranteeing its correctness and reliability under various scenarios. Each test case is designed to target specific aspects of the class's behavior, facilitating effective validation and debugging.
 
 
-Detailed Description of Unit Test Strategy for DataUtilites.java:
+# Detailed Description of Unit Test Strategy for DataUtilites.java:
 
 1. Direct Row Access: This partition verifies the method's ability to accurately calculate the total of all values in a specified row of a `Values2D` dataset. It ensures that the method correctly sums the elements of the row, taking into account the correctness of indexing and summing functionalities.
   
