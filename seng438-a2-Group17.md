@@ -10,7 +10,7 @@
 | Qazi Ali              | 30142452    |
 
 # 1 Introduction:
-In the context of modern software development, unit testing stands as a critical component of ensuring code quality and functionality. This assignment embarks on the journey of exploring automated unit testing by focusing on two specific Java classes: DataUtilities.java and Range.java. Utilizing JUnit, a cornerstone of the XUnit framework family renowned for its efficacy in the Java ecosystem, our task is to delve into the intricacies of testing these classes. The objective here is twofold: firstly, to provide a comprehensive understanding of the fundamentals of automated unit testing, and secondly, to highlight the importance of tailoring testing procedures to meet the unique requirements of each unit under scrutiny. Through this assignment, we aim to not only grasp the technical aspects of JUnit testing but also appreciate its pivotal role in the broader context of software engineering. This educational endeavor seeks to equip us with the skills and knowledge necessary to apply unit testing practices effectively, ensuring that our code not only meets functional specifications but also adheres to the highest standards of quality and reliability
+This assignment is about learning how to test software using JUnit, a tool for checking if our Java code works correctly. We will focus on two parts of a program: DataUtilities.java and Range.java. The goal is to understand how to do automated testing, which helps us make sure our software does what it's supposed to do. By using JUnit, we'll practice making tests that fit each part of the program we're checking. This way, we learn an important skill for building reliable software.
 
 # 2 Detailed description of unit test strategy:
 
