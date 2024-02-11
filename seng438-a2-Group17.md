@@ -36,34 +36,33 @@ By considering these input partitions, the unit test strategy ensures comprehens
 
 Out of the 15 methods we tested the following 5 methods.
 
-Test Cases Developed for Range.java:
-Test Boundaries Directly                                                                                                                             
-Methods: getUpperBound() and getLowerBound()                                                                                    
-Description: Verifies if the lower and upper boundaries are set correctly when directly provided during initialization.
+# Test Cases Developed for Range.java:
+# Test Boundaries Directly                                                                                          
+ Methods: getUpperBound() and getLowerBound()                                                                                    
+ Description: Verifies if the lower and upper boundaries are set correctly when directly provided during initialization.
 
-Test Zero Length Range:                                                                                                                       
-Method: getLength()                                                                                                                
-Description: Ensures that the length of the range is correctly computed when the range has zero length.
+# Test Zero Length Range:                                                                                                                       
+ Method: getLength()                                                                                                   Description: Ensures that the length of the range is correctly computed when the range has zero length.
 
-Test Contains at Boundaries:                                                                                                                     
-Method: Contains()                                                                                                                                      
-Description: Tests the contains method to verify if it correctly identifies whether the range contains boundary values.
-
-
-Test Shift With Zero Crossing:                                                                                                              
-Method: Shift()                                                                                                                                              
-Description: Validates the shift method's behavior when the range crosses zero.
-
-Test Shift Without Zero Crossing:   
-Method:Shift()                                                                                                                                                             
-Description: Checks if the shift method maintains the range boundaries without crossing zero.
-
-Test Get Length for Different Ranges:                                                                                                     
-Method: getLength()                                                                                                                                                  
-Description: Ensures that the getLength method calculates the correct length for negative, zero, and positive ranges.
+# Test Contains at Boundaries:                                                                                                                     
+ Method: Contains()                                                                                                                                      
+ Description: Tests the contains method to verify if it correctly identifies whether the range contains boundary values.
 
 
-These test cases cover the input partitions identified in the test strategy, ensuring thorough testing of the Range class functionalities.
+# Test Shift With Zero Crossing:                                                                                                              
+ Method: Shift()                                                                                                                                              
+ Description: Validates the shift method's behavior when the range crosses zero.
+
+# Test Shift Without Zero Crossing:   
+ Method:Shift()                                                                                                                                                             
+ Description: Checks if the shift method maintains the range boundaries without crossing zero.
+
+# Test Get Length for Different Ranges:                                                                                                     
+ Method: getLength()                                                                                                                                                  
+ Description: Ensures that the getLength method calculates the correct length for negative, zero, and positive ranges.
+
+
+ These test cases cover the input partitions identified in the test strategy, ensuring thorough testing of the Range class functionalities.
 
 
 
