@@ -113,7 +113,7 @@ These test cases are designed to cover key functionalities within the DataUtilit
 
 # 4 How the team work/effort was divided and managed
 
-Team Work was divided into 2 Groups. And we adopted the pair programming approach where within each group one was writing code and the other was the observer but we switched roles and cross checked each other's work. Rohan Kapila and Shayyan Asim tested the Range.java class whereas Qazi Ali and Fayzan Toor tested the DataUtilities.java class but both groups then tested each other’s assigned class and cross checked.
+Team Work was divided into two Groups. And we adopted the pair programming approach where within each group one was writing code and the other was the observer but we switched roles and cross checked each other's work. Rohan Kapila and Shayyan Asim tested the Range.java class whereas Qazi Ali and Fayzan Toor tested the DataUtilities.java class but both groups then tested each other’s assigned class and cross checked.
 
 
 # 5 Difficulties encountered, challenges overcome, and lessons learned
