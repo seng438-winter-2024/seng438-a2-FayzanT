@@ -122,7 +122,7 @@ During our test making process for the DataUtilities class, we encountered some 
 
 # 6 Comments/feedback on the lab itself
 
-This assignment was a fun way to get hands-on experience with Junit testing and understanding the importance of testing in software engineering. It taught us how we should design test cases by coding and then running them. The lab was designed nicely and it was easy to run through every step however for windows user in our group we were not able to render the index.html file, in future we hope that all files given to us by lab instructions are capable on running any type of OS.
+This assignment was a fun way to get hands-on experience with Junit testing and understanding the importance of testing in software engineering. It taught us how we should design test cases by coding and then running them. The lab was designed nicely and it was easy to run through every step however for windows user in our group we were not able to render the index.html file, in future we hope that all files given to us by lab instructions are capable on running on any type of OS.
 
 
 
