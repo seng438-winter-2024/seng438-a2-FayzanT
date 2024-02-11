@@ -43,7 +43,7 @@ By considering these input partitions, the unit test strategy ensures comprehens
 ### 2. Primitive to Object Conversion:
   This partition focuses on the method's capability to convert an array of double primitives to an array of `Number` objects. By testing this functionality, it verifies the method handles the conversion correctly, ensuring each primitive value is encapsulated into a corresponding `Number` object, preserving the value accurately.
 
-### 3. Cumulative Calculation Accuracy**: 
+### 3. Cumulative Calculation Accuracy: 
   This partition aims to validate the correctness of cumulative percentage calculations within a `KeyedValues` dataset. It examines whether the method computes cumulative percentages correctly, ensuring the calculations are accurate and the results maintain the integrity of the original data, reflecting proper cumulative logic.
 
 ### 4. 2D Array Conversion Integrity:
