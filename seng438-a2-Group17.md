@@ -56,7 +56,6 @@ By adopting this structured approach to testing, similar to the one used for `Ra
 
 # 3 Test cases developed
 
-Out of the 15 methods we tested the following 5 methods.
 
 ## Test Cases Developed for Range.java:
 ### Test Boundaries Directly                                                                                          
