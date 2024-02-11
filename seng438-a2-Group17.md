@@ -75,7 +75,8 @@ These test cases cover the input partitions identified in the test strategy, ens
 
 # 4 How the team work/effort was divided and managed
 
-Text…
+Team Work was divided into 2 Groups. And we adopted the pair programming approach where within each group one was writing code and the other was the observer but we switched roles and cross checked each other's work. Rohan Kapila and Shayyan Asim tested the Range.java class whereas Qazi Ali and Fayzan Toor tested the DataUtilities.java class but both groups then tested each other’s assigned class and cross checked.
+
 
 # 5 Difficulties encountered, challenges overcome, and lessons learned
 
@@ -83,4 +84,6 @@ Text…
 
 # 6 Comments/feedback on the lab itself
 
-Text…
+Comments/Feedback:  This assignment was a fun way to get hands-on experience with Junit testing and understanding the importance of testing in software engineering. It taught us how we should design test cases by coding and then running them. 
+
+
