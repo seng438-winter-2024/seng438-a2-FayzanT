@@ -149,6 +149,7 @@ This assignment was a fun way to get hands-on experience with Junit testing and 
 We used ChatGPT for error log explanations when our tests were not passing. We gave the error message as the prompt and retrieved information that let us search up solutions to fix the error.
 
 Prompt:
+<br>
 "unexpected invocation: keyedValues.getKey(<1>)
 expectations:
   allowed, already invoked 4 times: keyedValues.getItemCount(); returns <2>
@@ -198,7 +199,7 @@ what happened before this:
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)"
-"
+<br>
 Response:
 -"The error message you're encountering is related to a unit test that uses JMock for mocking dependencies. The message provides detailed information about the expectations set for mocked methods and their actual invocations, which didn't match the expectations. Let's break down the message to understand the issue and how to fix it.
 
