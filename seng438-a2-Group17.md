@@ -144,5 +144,99 @@ During our test making process for the DataUtilities class, we encountered some 
 
 This assignment was a fun way to get hands-on experience with Junit testing and understanding the importance of testing in software engineering. It taught us how we should design test cases by coding and then running them. The lab was designed nicely and it was easy to run through every step however for windows user in our group we were not able to render the index.html file, in future we hope that all files given to us by lab instructions are capable on running on any type of OS.
 
+# 7 AI Usage:
+
+We used ChatGPT for error log explanations when our tests were not passing. We gave the error message as the prompt and retrieved information that let us search up solutions to fix the error.
+
+Prompt:
+"unexpected invocation: keyedValues.getKey(<1>)
+expectations:
+  allowed, already invoked 4 times: keyedValues.getItemCount(); returns <2>
+  allowed, already invoked 1 time: keyedValues.getValue(<0>); returns <1>
+  allowed, already invoked 2 times: keyedValues.getValue(<1>); returns <2>
+  allowed, already invoked 1 time: keyedValues.getKey(<0>); returns <0>
+what happened before this:
+  keyedValues.getItemCount()
+  keyedValues.getValue(<1>)
+  keyedValues.getItemCount()
+  keyedValues.getItemCount()
+  keyedValues.getValue(<0>)
+  keyedValues.getKey(<0>)
+  keyedValues.getItemCount()
+  keyedValues.getValue(<1>)
+
+	at org.jmock.internal.InvocationDispatcher.dispatch(InvocationDispatcher.java:56)
+	at org.jmock.Mockery.dispatch(Mockery.java:218)
+	at org.jmock.Mockery.access$000(Mockery.java:43)
+	at org.jmock.Mockery$MockObject.invoke(Mockery.java:258)
+	at org.jmock.internal.InvocationDiverter.invoke(InvocationDiverter.java:27)
+	at org.jmock.internal.FakeObjectMethods.invoke(FakeObjectMethods.java:38)
+	at org.jmock.lib.JavaReflectionImposteriser$1.invoke(JavaReflectionImposteriser.java:33)
+	at jdk.proxy2/jdk.proxy2.$Proxy6.getKey(Unknown Source)
+	at org.jfree.data.DataUtilities.getCumulativePercentages(DataUtilities.java:185)
+	at org.jfree.data.test.DataUtilitiesTest.testGetCumulativePercentages(DataUtilitiesTest.java:149)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)"
+"
+Response:
+-"The error message you're encountering is related to a unit test that uses JMock for mocking dependencies. The message provides detailed information about the expectations set for mocked methods and their actual invocations, which didn't match the expectations. Let's break down the message to understand the issue and how to fix it.
+
+Understanding the Error Message
+Unexpected Invocation: The test did not expect keyedValues.getItemCount() to be called more than once, but it was.
+
+Expectations:
+
+keyedValues.getItemCount(); was expected to be called once and it has already been called once. This is okay, but the error message suggests there was an attempt to call it again, which was not expected.
+keyedValues.getValue(<0>); was expected to be called once but never was. This indicates a missing method call that the test was expecting.
+keyedValues.getValue(<1>); was expected to be called once and has been called once, which matches the expectation correctly.
+What happened before this: This part of the message tells you the sequence of method calls that occurred before the error was thrown:
+
+keyedValues.getItemCount() was called.
+keyedValues.getValue(<1>) was called.
+Error Trace: The stack trace provides the path through the code that led to the error, starting from the failing test method testGetCumulativePercentages in DataUtilitiesTest.
+
+How to Fix the Issue
+Given the error message, there are a few potential issues to address in your test:
+
+Multiple Invocations of getItemCount: Your test or the code under test calls getItemCount() more than once, but your mocking setup only expected it to happen once. If the method is supposed to be called multiple times, adjust your expectation to reflect that. In JMock, you can use .times(int count) to specify the number of invocations expected.
+
+Missing Invocation of getValue(<0>): Your test setup expected getValue(<0>) to be called, but it never was. Ensure that your test or the code under test correctly calls this method as expected. If this call is conditional or not required, you might need to adjust your expectation to match the actual logic.
+
+Correct Expectation for getValue(<1>): Since the call to getValue(<1>) matches the expectation, no action is needed for this particular expectation.
+
+To adjust the expectation for multiple invocations, you could modify your setup like this (assuming a hypothetical syntax based on common usage in mocking frameworks):
+
+java
+Copy code
+// Expecting getItemCount to be called any number of times, returning 2 each time
+expect(keyedValues.getItemCount()).andReturn(2).anyTimes();
+
+// Expecting getValue to be called with specific arguments
+expect(keyedValues.getValue(0)).andReturn(1).once(); // If it's supposed to be called
+expect(keyedValues.getValue(1)).andReturn(2).once(); // Already correct
+Review the logic in your test and the method under test to ensure it aligns with the expected behavior. If the method getItemCount is indeed called more than once in the flow, your expectation setup should reflect that. Similarly, ensure that getValue(<0>) is called as expected in the test scenario."
+
+
 
 
