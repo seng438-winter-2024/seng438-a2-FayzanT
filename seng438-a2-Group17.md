@@ -102,7 +102,7 @@ By adopting this structured approach to testing, similar to the one used for `Ra
 
 ### Test Calculate Row Total:
  Methods: calculateRowTotal()
- Description: Verifies that the calculateRowTotal method accurately computes the sum of values within a specified row using a mocked Values2D object.
+ <br>Description: Verifies that the calculateRowTotal method accurately computes the sum of values within a specified row using a mocked Values2D object.
 
 ### Test Create Number Array:
  Methods: createNumberArray()
