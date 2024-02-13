@@ -42,20 +42,23 @@ By considering these input partitions, the unit test strategy ensures a good  co
 
 ## Detailed Description of Unit Test Strategy for DataUtilites.java:
 
-### 1. Direct Row Access: 
-  This partition verifies the method's ability to accurately calculate the total of all values in a specified row of a `Values2D` dataset. It ensures that the method correctly sums the elements of the row, taking into account the correctness of indexing and summing functionalities.
-  
-### 2. Primitive to Object Conversion:
-  This partition focuses on the method's capability to convert an array of double primitives to an array of `Number` objects. By testing this functionality, it verifies the method handles the conversion correctly, ensuring each primitive value is encapsulated into a corresponding `Number` object, preserving the value accurately.
 
-### 3. Cumulative Calculation Accuracy: 
-  This partition aims to validate the correctness of cumulative percentage calculations within a `KeyedValues` dataset. It examines whether the method computes cumulative percentages correctly, ensuring the calculations are accurate and the results maintain the integrity of the original data, reflecting proper cumulative logic.
+### 1. Direct Row Access: This partition confirms the method’s functionality to calculate the values in a specified row using the Values2D dataset. It checks the accuracy of the results by taking into account the indexing and summing functions of Values2D.
 
-### 4. 2D Array Conversion Integrity:
-  This section tests the method's ability to convert a 2D array of double primitives to a 2D array of `Number` objects without losing data integrity. It ensures the method accurately handles the conversion of each element, maintaining the original values and structure of the 2D array.
 
-By adopting this structured approach to testing, similar to the one used for `Range.java`, we ensure comprehensive coverage and reliability of the methods within the DataUtilities class or similar utility classes. Each test case is meticulously designed to target specific functionalities, enabling effective validation and ensuring the methods perform as expected under various scenarios.
+### 2. Primitive to Object Conversion: This partition uses the method’s ability to convert an array of double values into an array of Number objects. Through the test of this method, the functionality is verified when handling the conversion of primitive values into Objects.
 
+
+### 3. Cumulative Calculation Accuracy: This partition validates the cumulative percentage calculations within the KeyedValues dataset. It authenticates the values calculated through the method against what is expected to return from the method description.
+
+
+### 4. 2D Array Conversion Integrity: 
+This section verifies the method’s functionality in converting a 2D array of doubles into a 2D array of Number objects. It ensures the conversion carries over properly with data integrity.
+
+### 5. Invalid Parameter Exception:
+This partition ensures an InvalidParameterException is thrown when the incorrect parameters are input into the method. The method’s specify they are able to throw this exception, so null values are used to test it.
+
+By adopting this structured approach to testing, similar to the one used for `Range.java`, we ensure in-depth coverage and reliability of the methods within the DataUtilities class. Each test case is designed to target specific functionalities, allowing for effective validation and ensuring method integrity across multiple inputs.
 
 
 
