@@ -10,7 +10,7 @@
 | Qazi Ali              | 30142452    |
 
 # 1 Introduction:
-This assignment is about learning how to test software using JUnit, a tool for checking if our Java code works correctly. We will focus on two parts of a program: DataUtilities.java and Range.java. The goal is to understand how to do automated testing, which helps us make sure our software does what it's supposed to do. By using JUnit, we'll practice making tests that fit each part of the program we're checking. This way, we learn an important skill for building reliable software.
+In this assignment we are tasked to test 2 different classes. DataUtilities.java and Range.java using Junit. The objective of this assignment is to educate us on the fundamentals of automated unit testing, emphasizing testing procedures aligned with the specific requirements of each unit. By creating tests and mocking behaviors of dependent classes, we get to fully explore the intricacies of black box testing.
 
 # 2 Detailed description of unit test strategy:
 
