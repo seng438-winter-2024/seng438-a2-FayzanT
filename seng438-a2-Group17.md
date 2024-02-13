@@ -43,13 +43,16 @@ By considering these input partitions, the unit test strategy ensures a good  co
 ## Detailed Description of Unit Test Strategy for DataUtilites.java:
 
 
-### 1. Direct Row Access: This partition confirms the method’s functionality to calculate the values in a specified row using the Values2D dataset. It checks the accuracy of the results by taking into account the indexing and summing functions of Values2D.
+### 1. Direct Row Access:
+This partition confirms the method’s functionality to calculate the values in a specified row using the Values2D dataset. It checks the accuracy of the results by taking into account the indexing and summing functions of Values2D.
 
 
-### 2. Primitive to Object Conversion: This partition uses the method’s ability to convert an array of double values into an array of Number objects. Through the test of this method, the functionality is verified when handling the conversion of primitive values into Objects.
+### 2. Primitive to Object Conversion:
+This partition uses the method’s ability to convert an array of double values into an array of Number objects. Through the test of this method, the functionality is verified when handling the conversion of primitive values into Objects.
 
 
-### 3. Cumulative Calculation Accuracy: This partition validates the cumulative percentage calculations within the KeyedValues dataset. It authenticates the values calculated through the method against what is expected to return from the method description.
+### 3. Cumulative Calculation Accuracy:
+This partition validates the cumulative percentage calculations within the KeyedValues dataset. It authenticates the values calculated through the method against what is expected to return from the method description.
 
 
 ### 4. 2D Array Conversion Integrity: 
