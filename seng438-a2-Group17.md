@@ -16,22 +16,28 @@ In this assignment we are tasked to test 2 different classes. DataUtilities.java
 
 ## Detailed Description of Unit Test Strategy for Range.java:
 
-### 1. Boundaries Directly:
-   This partition focuses on testing the correctness of the lower and upper boundaries directly when provided during initialization. It ensures that the range object sets its boundaries accurately based on the input values.
+### 1.Boundaries Directly: 
+This partition focuses on whether the lower and upper bounds are correct and the range class sets the boundaries accurately according to user inputs.
 
-### 2. Zero Length Range: 
-  This partition examines the scenario where the range has zero length. By testing this condition, it verifies whether the class handles cases where the lower and upper bounds are equal appropriately, ensuring that the length calculation is correct.
+### 2.Zero Length Range: 
+This partition examines the case where the range has zero length. By testing this condition, it verifies that the length calculation is appropriately done when the lower and upper bound values are the same. 
 
-### 3. Contains at Boundaries: 
-  This partition targets the contains method, specifically testing its behavior with boundary values. It validates whether the method correctly identifies whether the range contains its boundary values or not, covering both inclusive and exclusive boundary scenarios.
+### 3.Contains at Boundaries: 
+This partition focuses on testing the  contains method, specifically testing its behavior with boundary values. It verifies whether a range contains or not contains a specific number.
 
-### 4. Shift With Zero Crossing:
-  This partition tests the shift method, focusing on scenarios where the range crosses zero as a result of the shift operation. By testing this condition, it ensures that the class handles range shifting accurately, adjusting boundaries accordingly without unexpected behavior when crossing zero.
+### 4.Shift With Zero Crossing:
+This partition does the testing of the shift method, which focuses on cases where the range crosses zero as a result of the shift operation. By testing this condition, it ensures that the class handles range shifting accurately, adjusting boundaries correctly without any outliers when crossing zero.
 
-### 5. Get Length for Different Ranges:
-  This partition aims to validate the correctness of the getLength method across different types of ranges: negative, zero, and positive. By testing these scenarios, it ensures that the method accurately calculates the length of the range regardless of its position relative to zero.
+### 5.Shift Without Zero Crossing:
+This partition is the opposite of the  previous partition, this partition examines the shift method's behavior when the range is shifted without crossing zero. It verifies that the range boundaries are appropriately adjusted without crossing the zero boundary, maintaining the correctness of the range.
 
-By considering these input partitions, the unit test strategy ensures comprehensive coverage of the Range class functionality, guaranteeing its correctness and reliability under various scenarios. Each test case is designed to target specific aspects of the class's behavior, facilitating effective validation and debugging.
+### 6.Get Length for Different Ranges:
+This partition aims to verify that even if its a positive, negative value the get length method calculates the correct range.
+
+### 7: Nullshift exception: 
+When testing the Shift method we put one of the parameters as null to check if it throws an exception and gives an error.
+
+By considering these input partitions, the unit test strategy ensures a good  coverage of the Range class working. Each test case is designed to target specific aspects of the class's behavior, promoting effective verification and debugging.
 
 
 ## Detailed Description of Unit Test Strategy for DataUtilites.java:
